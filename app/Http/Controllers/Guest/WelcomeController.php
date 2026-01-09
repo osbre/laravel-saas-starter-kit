@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\Guest;
 
 use Illuminate\Foundation\Application;
@@ -14,10 +16,10 @@ class WelcomeController
     public function __invoke(): Response
     {
         return Inertia::render('Welcome', [
-            'canLogin'       => Route::has('login'),
-            'canRegister'    => Route::has('register'),
+            'canLogin' => Route::has('login'),
+            'canRegister' => Route::has('register'),
             'laravelVersion' => Application::VERSION,
-            'phpVersion'     => PHP_VERSION,
+            'phpVersion' => PHP_VERSION,
         ]);
     }
 }

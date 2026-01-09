@@ -6,8 +6,6 @@ use Rector\Caching\ValueObject\Storage\FileCacheStorage;
 use Rector\Config\RectorConfig;
 use Rector\Php74\Rector\Closure\ClosureToArrowFunctionRector;
 use Rector\Php81\Rector\FuncCall\NullToStrictStringFuncCallArgRector;
-use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
-use Rector\PostRector\Rector\NameImportingPostRector;
 use Rector\TypeDeclaration\Rector\ArrowFunction\AddArrowFunctionReturnTypeRector;
 use Rector\TypeDeclaration\Rector\Closure\AddClosureVoidReturnTypeWhereNoReturnRector;
 use Rector\TypeDeclaration\Rector\Closure\ClosureReturnTypeRector;
@@ -60,10 +58,10 @@ return RectorConfig::configure()
         AddClosureVoidReturnTypeWhereNoReturnRector::class,
         AddArrowFunctionReturnTypeRector::class,
         ClosureReturnTypeRector::class,
-//        NameImportingPostRector::class => [
-//            __DIR__ . '/bootstrap',
-//            __DIR__ . '/config',
-//        ],
+        //        NameImportingPostRector::class => [
+        //            __DIR__ . '/bootstrap',
+        //            __DIR__ . '/config',
+        //        ],
         DispatchToHelperFunctionsRector::class,
         AddHasFactoryToModelsRector::class,
         NullToStrictStringFuncCallArgRector::class,

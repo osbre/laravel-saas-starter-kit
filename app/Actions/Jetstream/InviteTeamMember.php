@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Actions\Jetstream;
 
 use App\Models\Team;
@@ -57,7 +59,7 @@ class InviteTeamMember implements InvitesTeamMembers
     /**
      * Get the validation rules for inviting a team member.
      *
-     * @return array<string, array<int, \Illuminate\Contracts\Validation\Rule|string>|string>
+     * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
     protected function rules(Team $team): array
     {

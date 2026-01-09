@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -15,6 +17,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 /**
  * @property-read Collection<int, Team> $ownedTeams
+ *
  * @method HasMany<Team, $this> ownedTeams()
  */
 class User extends Authenticatable
@@ -23,6 +26,7 @@ class User extends Authenticatable
 
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory;
+
     use HasProfilePhoto;
     use HasTeams;
     use Notifiable;

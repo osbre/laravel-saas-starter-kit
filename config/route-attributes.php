@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
 
 return [
@@ -16,7 +18,7 @@ return [
      */
     'directories' => [
         app_path('Http/Controllers/API') => [
-            'prefix'     => 'api',
+            'prefix' => 'api',
             'middleware' => 'api',
         ],
         app_path('Http/Controllers/Dashboard') => [
@@ -31,7 +33,7 @@ return [
      * This middleware will be applied to all routes.
      */
     'middleware' => [
-        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        Illuminate\Routing\Middleware\SubstituteBindings::class,
     ],
 
     /*
