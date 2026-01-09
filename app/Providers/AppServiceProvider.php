@@ -32,5 +32,9 @@ class AppServiceProvider extends ServiceProvider
             DB::prohibitDestructiveCommands();
             URL::forceHttps();
         }
+
+        if ($this->app->environment('testing')) {
+            config(['inertia.ssr.enabled' => false]);
+        }
     }
 }
