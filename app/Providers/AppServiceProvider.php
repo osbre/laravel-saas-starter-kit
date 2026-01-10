@@ -29,7 +29,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Model::shouldBeStrict();
-        Model::automaticallyEagerLoadRelationships();
         Vite::useAggressivePrefetching();
         Http::preventStrayRequests();
         Date::use(CarbonImmutable::class);
