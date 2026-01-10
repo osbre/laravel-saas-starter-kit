@@ -5,6 +5,7 @@
 - [Larastan](https://github.com/larastan/larastan) and [Rector](https://github.com/rectorphp/rector) for type coverage and checks.
 - [Pint](https://laravel.com/docs/12.x/pint) and [Rector](https://github.com/rectorphp/rector) as formatters.
 - [Telescope](https://laravel.com/docs/12.x/telescope) with [toolbar](https://github.com/fruitcake/laravel-telescope-toolbar) for local debug assistance.
+- Custom `artisan make:` templates (stubs) based on [Spatie stubs](https://github.com/spatie/laravel-stubs).
 
 ## Prerequisites
 
