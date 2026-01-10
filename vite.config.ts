@@ -16,7 +16,4 @@ export default defineConfig({
       '@': '/resources/js',
     },
   },
-  ssr: {
-    noExternal: ['@inertiajs/server'],
-  },
 });
