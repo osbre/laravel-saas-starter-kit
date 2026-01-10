@@ -28,7 +28,6 @@
     "@headlessui/react": "^2.2.9",
     "@inertiajs/react": "^2.3.8",
     "classnames": "^2.5.1",
-    "lodash": "^4.17.21",
     "ziggy-js": "^2.6.0"
   },
   "prettier": {
