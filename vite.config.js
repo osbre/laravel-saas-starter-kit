@@ -18,4 +18,11 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        rollupOptions: {
+            output: {
+                experimentalMinChunkSize: 100_000, // 10 KB
+            },
+        },
+    },
 });
