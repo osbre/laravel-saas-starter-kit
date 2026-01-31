@@ -24,6 +24,7 @@ createServer((page) =>
         defaults: {
             future: {
                 useScriptElementForInitialPage: true,
+                useDataInertiaHeadAttribute: true,
             },
         },
     })

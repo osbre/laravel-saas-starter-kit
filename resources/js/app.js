@@ -23,6 +23,9 @@ createInertiaApp({
     defaults: {
         future: {
             useScriptElementForInitialPage: true,
+            useDataInertiaHeadAttribute: true,
+            useDialogForErrorModal: true,
+            preserveEqualProps: true,
         },
     },
 });
